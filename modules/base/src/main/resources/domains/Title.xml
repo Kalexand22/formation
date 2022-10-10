@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<domain-models xmlns="http://axelor.com/xml/ns/domain-models"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://axelor.com/xml/ns/domain-models http://axelor.com/xml/ns/domain-models/domain-models_5.4.xsd">
+  <module name="formationbase" package="com.axelor.apps.formationbase.db"/>
+  <entity name="Title">
+    <string name="code" min="2" max="2"></string>
+    <string name="name" required="true"></string>
+  </entity>
+</domain-models>
