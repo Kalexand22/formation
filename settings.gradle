@@ -14,3 +14,6 @@ modules.each { dir ->
   include "modules:$dir.name"
   project(":modules:$dir.name").projectDir = dir
 }
+
+// Include modules
+include "modules:axelor-contact"
