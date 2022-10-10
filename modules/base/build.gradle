@@ -2,8 +2,8 @@ apply plugin: "com.axelor.app-module"
 
 
 axelor {
-	title "Open Auction"
-	description "Open Auction"
+	title "Formation"
+	description "Formation"
 } 
 
 dependencies {
