@@ -3,7 +3,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://axelor.com/xml/ns/domain-models http://axelor.com/xml/ns/domain-models/domain-models_5.4.xsd">
   <module name="formationbase" package="com.axelor.apps.formationbase.db"/>
-  <entity name="Test">
-    <string name="code"></string>
+  <entity name="Marin">
+    <many-to-one ref="com.axelor.apps.formationbase.db.Bateau" name="monBateau"></many-to-one>
   </entity>
 </domain-models>

@@ -3,7 +3,8 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://axelor.com/xml/ns/domain-models http://axelor.com/xml/ns/domain-models/domain-models_5.4.xsd">
   <module name="formationbase" package="com.axelor.apps.formationbase.db"/>
-  <entity name="Test">
-    <string name="code"></string>
+  <entity name="Title_jeremie">
+    <string name="nom"></string>
+    <integer name="code"></integer>
   </entity>
 </domain-models>
