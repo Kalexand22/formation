@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<domain-models xmlns="http://axelor.com/xml/ns/domain-models"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://axelor.com/xml/ns/domain-models http://axelor.com/xml/ns/domain-models/domain-models_5.4.xsd">
+  <module name="formationbase" package="com.axelor.apps.formationbase.db"/>
+  <entity name="Contact">
+    <many-to-one ref="com.axelor.apps.formationbase.db.Title" name="title"></many-to-one>
+    <string name="lastName"></string>
+    <string name="firstName"></string>
+    <date name="dateOfBirth"></date>
+    <one-to-one ref="com.axelor.apps.formationbase.db.EmailAddressY" name="emailAddress"></one-to-one>
+    <integer name="phone"></integer>
+    <many-to-one ref="com.axelor.apps.base.db.Address" name="addressList"></many-to-one>
+    <binary name="photo"></binary>
+  </entity>
+</domain-models>
