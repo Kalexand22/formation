@@ -4,16 +4,16 @@
   xsi:schemaLocation="http://axelor.com/xml/ns/domain-models
   http://axelor.com/xml/ns/domain-models/domain-models_5.4.xsd">
 
-  <module name="contact" package="com.axelor.contact.db" />
+  <module name="contact" package="com.axelor.contact.db"/>
 
   <entity name="Address">
-    <many-to-one name="contact" ref="Contact" required="true" />
-    <string name="street" required="true" max="255" />
-    <string name="area" max="255" />
-    <string name="city" />
-    <string name="zip" />
-    <string name="state" />
-    <string name="country" />
+    <many-to-one name="contact" ref="Contact" required="true"/>
+    <string name="street" required="true" max="255"/>
+    <string name="area" max="255"/>
+    <string name="city"/>
+    <string name="zip"/>
+    <string name="state"/>
+    <string name="country"/>
   </entity>
 
 </domain-models>

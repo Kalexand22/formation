@@ -4,18 +4,14 @@
   xsi:schemaLocation="http://axelor.com/xml/ns/object-views
   http://axelor.com/xml/ns/object-views/object-views_5.4.xsd">
 
-  <grid name="contact-grid"
-        title="Contacts"
-        model="com.axelor.contact.db.Contact">
-    <field name="fullName" />
-    <field name="email" />
-    <field name="phone" />
-    <field name="dateOfBirth" />
+  <grid name="contact-grid" title="Contacts" model="com.axelor.contact.db.Contact">
+    <field name="fullName"/>
+    <field name="email"/>
+    <field name="phone"/>
+    <field name="dateOfBirth"/>
   </grid>
 
-  <form name="contact-form"
-        title="Contact"
-        model="com.axelor.contact.db.Contact">
+  <form name="contact-form" title="Contact" model="com.axelor.contact.db.Contact">
     <panel name="overviewPanel" title="Overview">
       <field name="fullName" readonly="false">
         <editor>
@@ -24,7 +20,7 @@
           <field name="lastName" colSpan="5"/>
         </editor>
       </field>
-      <field name="dateOfBirth" />
+      <field name="dateOfBirth"/>
       <field name="email">
         <viewer><![CDATA[
         <a href="mailto:{{record.email}}">{{record.email}}</a>
@@ -37,17 +33,16 @@
       </field>
     </panel>
     <panel name="aboutMePanel" title="About me">
-        <field name="notes" showTitle="false" colSpan="12"/>
+      <field name="notes" showTitle="false" colSpan="12"/>
     </panel>
-    <panel-related name="addressesPanel"
-                   field="addresses"
-                   form-view="address-form-popup">
-        <field name="street"/>
-        <field name="area"/>
-        <field name="city"/>
-        <field name="state"/>
-        <field name="zip"/>
-        <field name="country"/>
+    <panel-related name="addressesPanel" field="addresses"
+      form-view="address-form-popup">
+      <field name="street"/>
+      <field name="area"/>
+      <field name="city"/>
+      <field name="state"/>
+      <field name="zip"/>
+      <field name="country"/>
     </panel-related>
     <panel name="sidePanel" sidebar="true">
       <field name="createdOn"/>
@@ -57,16 +52,14 @@
     </panel>
   </form>
 
-  <form name="address-form-popup"
-        title="Address"
-        model="com.axelor.contact.db.Address">
+  <form name="address-form-popup" title="Address" model="com.axelor.contact.db.Address">
     <panel title="Overview">
-      <field name="street" />
-      <field name="area" />
-      <field name="city" />
-      <field name="zip" />
-      <field name="state" />
-      <field name="country" />
+      <field name="street"/>
+      <field name="area"/>
+      <field name="city"/>
+      <field name="zip"/>
+      <field name="state"/>
+      <field name="country"/>
     </panel>
   </form>
 

@@ -8,8 +8,8 @@
 
   <entity name="Contact">
     <many-to-one name="title" ref="Title"/>
-    <string name="firstName" required="true" />
-    <string name="lastName" required="true" />
+    <string name="firstName" required="true"/>
+    <string name="lastName" required="true"/>
 
     <string name="fullName" namecolumn="true" search="firstName,lastName">
     <![CDATA[
@@ -22,15 +22,15 @@
     return title.getName() + " " + firstName + " " + lastName;
     ]]></string>
 
-    <date name="dateOfBirth" />
+    <date name="dateOfBirth"/>
 
-    <string name="email" required="true" unique="true" max="100" />
-    <string name="phone" max="20" massUpdate="true" />
-    <string name="notes" title="About me" large="true" />
+    <string name="email" required="true" unique="true" max="100"/>
+    <string name="phone" max="20" massUpdate="true"/>
+    <string name="notes" title="About me" large="true"/>
 
-    <one-to-many name="addresses" ref="Address" mappedBy="contact" />
+    <one-to-many name="addresses" ref="Address" mappedBy="contact"/>
 
-    <finder-method name="findByName" using="fullName" />
-    <finder-method name="findByEmail" using="email" />
+    <finder-method name="findByName" using="fullName"/>
+    <finder-method name="findByEmail" using="email"/>
   </entity>
 </domain-models>
